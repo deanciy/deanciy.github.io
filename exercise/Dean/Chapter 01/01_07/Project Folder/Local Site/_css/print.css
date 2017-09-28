@@ -1,0 +1,86 @@
+@charset "UTF-8";
+body {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	color: black;
+}
+header h1 {
+	font-size: 16pt;
+	color: black;
+}
+
+header img {
+	margin-left: 0in;
+}
+
+article {
+	width: 100%;
+}
+
+article h1 {
+	font-size: 16pt;
+	width: 6in;
+	padding-bottom: 2pt;
+	border-bottom-width: 2pt;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+}
+article h2 {
+	font-size: 14pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 6in;
+	border-bottom-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+}
+
+article h3 {
+	font-size: 12pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 6in;
+	border-bottom-width: 1pt;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+}
+
+v p {
+	font-size: 12pt;
+	line-height: 14pt;
+	width: 6in;
+	margin-left: 0.25in;
+}
+article li {
+	width: 4.5in;
+	margin-left: 0.5in;
+	font-size: 12pt;
+	line-height: 14pt;
+}
+
+div.embed-container  {
+	width: 4in;
+	height: 2in;
+	padding-bottom: 0.1%;
+}
+
+.sidebar, .globalNav {
+	display: none;
+}
+
+img {
+	margin-left: 0.5in;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: black;
+}
+a[href^="http"]:after {content:" Visit online at: "attr(href);
+	font-weight: bold;
+}
+
+.break {
+	page-break-before:always;
+}
