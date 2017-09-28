@@ -1,0 +1,155 @@
+@charset "UTF-8";
+html {
+    background-color: #EEE;
+}
+
+/* ~~ THE MAIN CONTENT ~~ */
+body {
+  width: 80%;
+  margin: 0 auto;
+  border: 0px;
+	padding: 0;
+	color: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.4;
+	background-color: #FFF;
+}
+
+h1	{
+	font-size: 1.3em;
+}
+
+h2	{
+	font-size:	1.2em;
+}
+
+h3	{
+	font-size: 	1.1em;
+}
+
+h4	{
+	font-size: 1em;
+}
+
+p 	{
+	font-size: 1em;
+	}
+	
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+a img { /* removes blue boarder around an image if the image is wrapped with a link tag */
+	border: none;
+}
+
+a:link {
+	color: #24890d; /* Dark Green */
+}
+
+a:visited {
+	color: #24890d; 	/* reset visited link color to Dark Green */
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: #41a62a; /* Lighter green color; adds a state change mouse hover & click for better usability */
+}
+
+aside {
+	float: left;
+	width: 180px;
+	background: #FFF;
+	/* padding: 10px 0; */
+}
+
+aside.sidebar {
+	float: right;
+	width: 150px;
+	background: #FFF;
+	padding-bottom: 20px;
+    padding-left: 20px;
+    line-height: 2.0;
+}
+
+
+/* ~~ THE HEADER ~~ */
+header {
+	background: #ccc;
+    border-bottom-style: solid;
+    border-bottom-color: darkgreen;
+    padding-bottom: .4em;     /* centers text vertically within header */
+    font-family: serif;
+}
+
+.header-text {              /* this class separates the text display properties - otherwise images within that section receive the padding also */
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: inline-block;    /* allows instructor name to display on same line as course name when device width is wide enough, then to wrap to next line while maintaining some separation between elements when device width is too small to display next to course name */
+}
+
+/* ~~ THE ARTICLE ~~ */
+article {
+    background: #FFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: #FFF;
+}
+
+/* ~~ THE FOOTER ~~ */
+footer {
+  padding: 1em 0em 1em 0em;
+	background: #000;
+  color: #FFF;
+	clear: both;
+    border-top-style: solid;
+    border-top-color: #24890d;
+}
+
+footer ul {
+	list-style: none;
+}
+
+li.footer-nav {               /* allows footer nav items to wrap more gracefully when device width is too small */
+  display: inline-block;
+  padding: 0 1em 1em 0em;
+}
+
+p.footer-nav {
+  padding: 1em 0 0 2.5em;
+}
+
+footer a:link {
+	color: #FFF;
+  text-decoration: none;
+}
+
+footer a:visited {
+	color: #FFF;     /* reset visited link color */
+  text-decoration: none;
+}
+
+footer a:hover, footer a:focus, footer a:active {
+    text-decoration: underline;       /* added a state change for better usability */
+}
+
+/* ~~ THE RESPONSIVE FEATURES for a better mobile device experience ~~ */
+@media screen and (max-width: 915px){ /* may need some break point tweaking depending on embedded video size */
+    aside.sidebar {                  /* puts sidebar nav at top of page on mobile devices */
+      float: none;
+      padding: 0;
+      line-height: 2.0;
+    }
+    body {width: 90%;}
+    header {
+      margin: 0 -5.5% 0 -5.5%;      /* gives a wider header on mobile devices */
+    }
+    footer {
+      margin: 0 -5.5% 0 -5.5%;      /* gives a wider footer on mobile devices */
+    }
+}
